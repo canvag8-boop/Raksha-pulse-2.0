@@ -1,0 +1,483 @@
+{
+  "users": {
+    "user-default": {
+      "id": "user-default",
+      "name": "Kunal Gaur",
+      "phone": "+919876543210",
+      "bloodGroup": "O+",
+      "medicalConditions": "Asthma (inhaler carried)",
+      "homeAddress": "Connaught Place, New Delhi"
+    }
+  },
+  "contacts": [
+    {
+      "id": "contact-1",
+      "userId": "user-default",
+      "name": "Geeta Gaur",
+      "relationship": "Mother",
+      "phone": "+919876511223",
+      "enabled": true,
+      "hasConsent": true,
+      "slot": 1,
+      "createdAt": "2026-10-12T18:47:57.461Z"
+    },
+    {
+      "id": "contact-2",
+      "userId": "user-default",
+      "name": "Priya Sharma",
+      "relationship": "Spouse",
+      "phone": "+919811122334",
+      "enabled": true,
+      "hasConsent": true,
+      "slot": 2,
+      "createdAt": "2026-10-12T18:47:57.461Z"
+    },
+    {
+      "id": "contact-3",
+      "userId": "user-default",
+      "name": "Dr. Anand Verma",
+      "relationship": "Family Physician",
+      "phone": "+919900088776",
+      "enabled": true,
+      "hasConsent": true,
+      "slot": 3,
+      "createdAt": "2026-10-12T18:47:57.461Z"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "EVT-057900",
+      "userId": "user-default",
+      "source": "ESP8266_WEARABLE",
+      "deviceId": "BAND001",
+      "emergencyType": "Hardware SOS (ESP8266 Inbuilt Button)",
+      "description": "Emergency alert triggered via ESP8266 (BAND001). Wearer pressed onboard inbuilt FLASH button on GPIO 0.",
+      "location": null,
+      "status": "REPORTED",
+      "createdAt": "2026-10-13T07:20:57.900Z",
+      "updatedAt": "2026-10-13T07:20:57.900Z"
+    },
+    {
+      "id": "EVT-003452",
+      "userId": "user-default",
+      "source": "ESP8266_WEARABLE",
+      "deviceId": "BAND001",
+      "emergencyType": "Hardware SOS (ESP8266 Inbuilt Button)",
+      "description": "Emergency alert triggered via ESP8266 (BAND001). Wearer pressed onboard inbuilt FLASH button on GPIO 0.",
+      "location": null,
+      "status": "REPORTED",
+      "createdAt": "2026-10-13T07:20:03.452Z",
+      "updatedAt": "2026-10-13T07:20:03.455Z"
+    },
+    {
+      "id": "EVT-NANO-7788",
+      "userId": "user-default",
+      "source": "ARDUINO_NANO_WEARABLE",
+      "deviceId": "NANO_BAND_01",
+      "emergencyType": "Hardware SOS (Arduino External Button)",
+      "description": "Emergency alert triggered via Arduino Nano. Wearer pressed external push button on Pin D2.",
+      "location": null,
+      "status": "REPORTED",
+      "createdAt": "2026-10-12T18:47:57.489Z",
+      "updatedAt": "2026-10-12T18:47:57.489Z"
+    }
+  ],
+  "calls": [
+    {
+      "callId": "CALL-EVT-057900-3-1791876057902",
+      "incidentId": "EVT-057900",
+      "userId": "user-default",
+      "contactId": "contact-3",
+      "contactName": "Dr. Anand Verma",
+      "phone": "+919900088776",
+      "relationship": "Family Physician",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791876057903_pfbn9z",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-13T07:20:57.902Z",
+      "updatedAt": "2026-10-13T07:21:07.906Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-13T07:20:57.902Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-13T07:20:57.903Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-13T07:20:59.404Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-13T07:21:01.907Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-13T07:21:07.906Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    },
+    {
+      "callId": "CALL-EVT-057900-2-1791876057902",
+      "incidentId": "EVT-057900",
+      "userId": "user-default",
+      "contactId": "contact-2",
+      "contactName": "Priya Sharma",
+      "phone": "+919811122334",
+      "relationship": "Spouse",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791876057903_4mgbic",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-13T07:20:57.902Z",
+      "updatedAt": "2026-10-13T07:21:07.906Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-13T07:20:57.902Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-13T07:20:57.903Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-13T07:20:59.404Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-13T07:21:01.906Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-13T07:21:07.906Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    },
+    {
+      "callId": "CALL-EVT-057900-1-1791876057901",
+      "incidentId": "EVT-057900",
+      "userId": "user-default",
+      "contactId": "contact-1",
+      "contactName": "Geeta Gaur",
+      "phone": "+919876511223",
+      "relationship": "Mother",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791876057903_tb7hy2",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-13T07:20:57.901Z",
+      "updatedAt": "2026-10-13T07:21:07.904Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-13T07:20:57.901Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-13T07:20:57.903Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-13T07:20:59.404Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-13T07:21:01.904Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-13T07:21:07.904Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    },
+    {
+      "callId": "CALL-EVT-003452-3-1791876003457",
+      "incidentId": "EVT-003452",
+      "userId": "user-default",
+      "contactId": "contact-3",
+      "contactName": "Dr. Anand Verma",
+      "phone": "+919900088776",
+      "relationship": "Family Physician",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791876003458_kopk0z",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-13T07:20:03.457Z",
+      "updatedAt": "2026-10-13T07:20:13.460Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-13T07:20:03.457Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-13T07:20:03.458Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-13T07:20:04.960Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-13T07:20:07.461Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-13T07:20:13.460Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    },
+    {
+      "callId": "CALL-EVT-003452-2-1791876003457",
+      "incidentId": "EVT-003452",
+      "userId": "user-default",
+      "contactId": "contact-2",
+      "contactName": "Priya Sharma",
+      "phone": "+919811122334",
+      "relationship": "Spouse",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791876003458_2tpiis",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-13T07:20:03.457Z",
+      "updatedAt": "2026-10-13T07:20:13.460Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-13T07:20:03.457Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-13T07:20:03.458Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-13T07:20:04.959Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-13T07:20:07.461Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-13T07:20:13.460Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    },
+    {
+      "callId": "CALL-EVT-003452-1-1791876003457",
+      "incidentId": "EVT-003452",
+      "userId": "user-default",
+      "contactId": "contact-1",
+      "contactName": "Geeta Gaur",
+      "phone": "+919876511223",
+      "relationship": "Mother",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791876003458_t5i1da",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-13T07:20:03.457Z",
+      "updatedAt": "2026-10-13T07:20:13.459Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-13T07:20:03.457Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-13T07:20:03.458Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-13T07:20:04.959Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-13T07:20:07.459Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-13T07:20:13.459Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    },
+    {
+      "callId": "CALL-EVT-NANO-7788-3-1791830877489",
+      "incidentId": "EVT-NANO-7788",
+      "userId": "user-default",
+      "contactId": "contact-3",
+      "contactName": "Dr. Anand Verma",
+      "phone": "+919900088776",
+      "relationship": "Family Physician",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791830877489_jg52xv",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-12T18:47:57.489Z",
+      "updatedAt": "2026-10-12T18:48:07.492Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-12T18:47:57.489Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-12T18:47:57.489Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-12T18:47:58.991Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-12T18:48:01.491Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-12T18:48:07.492Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    },
+    {
+      "callId": "CALL-EVT-NANO-7788-2-1791830877489",
+      "incidentId": "EVT-NANO-7788",
+      "userId": "user-default",
+      "contactId": "contact-2",
+      "contactName": "Priya Sharma",
+      "phone": "+919811122334",
+      "relationship": "Spouse",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791830877489_vr21th",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-12T18:47:57.489Z",
+      "updatedAt": "2026-10-12T18:48:07.491Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-12T18:47:57.489Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-12T18:47:57.489Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-12T18:47:58.991Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-12T18:48:01.490Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-12T18:48:07.491Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    },
+    {
+      "callId": "CALL-EVT-NANO-7788-1-1791830877489",
+      "incidentId": "EVT-NANO-7788",
+      "userId": "user-default",
+      "contactId": "contact-1",
+      "contactName": "Geeta Gaur",
+      "phone": "+919876511223",
+      "relationship": "Mother",
+      "provider": "sandbox",
+      "providerCallSid": "CA_MOCK_1791830877489_yioqee",
+      "status": "COMPLETED",
+      "duration": 12,
+      "failureReason": null,
+      "isTestMode": true,
+      "initiatedAt": "2026-10-12T18:47:57.489Z",
+      "updatedAt": "2026-10-12T18:48:07.490Z",
+      "events": [
+        {
+          "status": "QUEUED",
+          "timestamp": "2026-10-12T18:47:57.489Z",
+          "details": "Call created in system"
+        },
+        {
+          "status": "INITIATED",
+          "timestamp": "2026-10-12T18:47:57.489Z",
+          "details": "Simulated call initiated (Sandbox Mode)"
+        },
+        {
+          "status": "RINGING",
+          "timestamp": "2026-10-12T18:47:58.990Z",
+          "details": "Simulated telephone network: phone is ringing"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-12T18:48:01.490Z",
+          "details": "Simulated recipient answered call; automated voice message playing"
+        },
+        {
+          "status": "COMPLETED",
+          "timestamp": "2026-10-12T18:48:07.490Z",
+          "details": "Automated voice message finished; call disconnected safely"
+        }
+      ]
+    }
+  ]
+}
